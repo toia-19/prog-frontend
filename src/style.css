@@ -13,3 +13,28 @@ h1{
 h2, h3{
     text-align: start;
 }
+
+.padre{
+    background-color: darkred;
+
+    width: 30rem;
+    height: 30rem;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hijo{
+    background-color: lemonchiffon;
+
+    width: 15rem;
+    height: 15rem;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
