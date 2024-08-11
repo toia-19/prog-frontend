@@ -13,3 +13,78 @@ h1{
 h2, h3{
     text-align: start;
 }
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.tarjeta{
+    background-color: grey;
+
+    width: 5rem;
+    height: 8rem;
+    margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    transform-style: preserve-3d;
+    transition: all 0.3s ease 0s;
+
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+
+.tarjeta:hover{
+    transform: rotateY(180deg);
+}
+
+.tarjeta-front{
+    backface-visibility: hidden;
+
+    position: absolute;
+}
+
+.tarjeta-back{
+    width: 5rem;
+    height: 8rem;
+    margin: 0.5rem;
+
+    backface-visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    
+    transform: rotateY(180deg);
+}
+
+/* Parejas de tarjetas por color */
+#uno, #nueve{
+    background-color: orange;
+}
+
+#dos, #siete{
+    background-color: blueviolet;
+}
+
+#tres, #once{
+    background-color: yellow;
+}
+
+#cuatro, #ocho{
+    background-color: blue;
+}
+
+#cinco, #seis{
+    background-color: brown;
+}
+
+#diez, #doce{
+    background-color: green;
+}
