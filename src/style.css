@@ -6,10 +6,47 @@
     font-style: normal;
 }
 
-h1{
+.container{
+    margin: 2rem;
+}
+
+h1, h3{
     text-align: center;
 }
 
-h2, h3{
+h2{
     text-align: start;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagen{
+    display: flex;
+    margin: 0.5rem;
+
+    transition: transform 0.2s;
+}
+
+.imagen:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 12rem;
+    height: 16rem;
+
+    object-fit: cover;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+}
+
+ul, li{
+    list-style-type: none;
 }
