@@ -6,10 +6,65 @@
     font-style: normal;
 }
 
+.container{
+    margin: 2rem;
+}
+
 h1{
     text-align: center;
 }
 
-h2, h3{
+h2{
     text-align: start;
+}
+
+#spinner{
+    margin: auto;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(249, 195, 48);
+}
+
+#spin{
+    display: none;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin { 
+    0% { 
+        transform: rotate(0deg); 
+    }
+    
+    50% {
+        transform: rotate(360deg);
+    }
+    
+    50% {
+        transform: rotate(360deg);
+    }
+    
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+img{
+    width: 3rem;
+    height: 3rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+}
+
+ul, li{
+    list-style-type: none;
 }
