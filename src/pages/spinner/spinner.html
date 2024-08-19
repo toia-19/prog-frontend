@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación Front-End</title>
 
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/25/25185.png" type="image/x-icon">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" type="image/x-icon">
+    <link rel="stylesheet" href="spinner.css">
 </head>
 
 <body>
     <nav>
         <ul class="navegador">
             <li>
-                <a href="#">Inicio</a>
+                <a href="/index.html">Inicio</a>
             </li>
 
             <li>
@@ -36,26 +36,18 @@
     </nav>
 
     <div class="container">
-        <h1>Programación Frontend</h1>
-        <h2>Actividades:</h2>
+        <div class="row">
+            <h1>Programación Frontend</h1>
+            <h2>Actividad 4: Spinner usando JS</h2>
+        </div>
 
-        <ul class="actividades">
-            <li>
-                <a href="/src/pages/div-centrado/div-centrado.html">Centramos un div con flexbox</a>
-            </li>
-
-            <li>
-                <a href="/src/pages/galeria/galeria.html">Galería de imágenes</a>
-            </li>
-
-            <li>
-                <a href="/src/pages/juego-memoria/juego-memoria.html">Juego de memoria (incompleto)</a>
-            </li>
-
-            <li>
-                <a href="/src/pages/spinner/spinner.html">Spinner usando JS</a>
-            </li>
-        </ul>
+        <div class="row" id="spinner">
+            <button class="boton" id="btn">¡SPINNER!</button>
+    
+            <div id="spin">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="Logo JavaScript"/>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -65,8 +57,7 @@
             </li>
         </ul>
     </footer>
-
-    <script src="/src/main.js"></script>
+    <script src="spinner.js"></script>
 </body>
 
 </html>

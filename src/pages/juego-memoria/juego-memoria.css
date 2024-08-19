@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NAVEGADOR */
+nav{
+    text-align: center;
+}
+
+.navegador li{
+    font-size: small;
+    display: inline;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.navegador a{
+    color: black;
+    text-decoration: none;
+}
+
+.navegador a:hover{
+    color: mediumaquamarine;
+}
+
+/* CONTENIDO PRINCIPAL */
+.container{
+    margin: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+h2, h3{
+    text-align: start;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.tarjeta{
+    background-color: grey;
+
+    width: 5rem;
+    height: 8rem;
+    margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    transform-style: preserve-3d;
+    transition: all 0.3s ease 0s;
+
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+
+.tarjeta:hover{
+    transform: rotateY(180deg);
+}
+
+.tarjeta-front{
+    backface-visibility: hidden;
+
+    position: absolute;
+}
+
+.tarjeta-back{
+    width: 5rem;
+    height: 8rem;
+    margin: 0.5rem;
+
+    backface-visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    
+    transform: rotateY(180deg);
+}
+
+/* Parejas de tarjetas por color */
+#uno, #nueve{
+    background-color: orange;
+}
+
+#dos, #siete{
+    background-color: blueviolet;
+}
+
+#tres, #once{
+    background-color: yellow;
+}
+
+#cuatro, #ocho{
+    background-color: blue;
+}
+
+#cinco, #seis{
+    background-color: brown;
+}
+
+#diez, #doce{
+    background-color: green;
+}
+
+/* PIE DE PÁGINA */
+footer{
+    position: relative;
+    bottom: 0px;
+}
+
+.navegador, .footer{
+    list-style-type: none;
+}

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación Front-End</title>
 
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/25/25185.png" type="image/x-icon">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="div-centrado.css">
 </head>
-
 <body>
     <nav>
         <ul class="navegador">
             <li>
-                <a href="#">Inicio</a>
+                <a href="/index.html">Inicio</a>
             </li>
 
             <li>
@@ -37,25 +35,14 @@
 
     <div class="container">
         <h1>Programación Frontend</h1>
-        <h2>Actividades:</h2>
+        <h2>Actividad 1: Centramos un div con flexbox</h2>
 
-        <ul class="actividades">
-            <li>
-                <a href="/src/pages/div-centrado/div-centrado.html">Centramos un div con flexbox</a>
-            </li>
-
-            <li>
-                <a href="/src/pages/galeria/galeria.html">Galería de imágenes</a>
-            </li>
-
-            <li>
-                <a href="/src/pages/juego-memoria/juego-memoria.html">Juego de memoria (incompleto)</a>
-            </li>
-
-            <li>
-                <a href="/src/pages/spinner/spinner.html">Spinner usando JS</a>
-            </li>
-        </ul>
+        <div class="padre">
+            <div class="hijo">
+                <h4>¡Hola Mundo!</h4>
+                <h5>¡Hola Mundo!</h5>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -68,5 +55,4 @@
 
     <script src="/src/main.js"></script>
 </body>
-
 </html>

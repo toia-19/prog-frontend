@@ -35,23 +35,50 @@ h1{
     text-align: center;
 }
 
-h2, h3{
+h2{
     text-align: start;
 }
 
-.actividades li{
-    font-size: medium;
-    padding-bottom: 1rem;
+#spinner{
+    margin: auto;
+    padding: 1rem;
 
-    list-style-type: decimal-leading-zero;
+    display: flex;
+    justify-content: space-around;
 }
 
-.actividades a{
-    color: black;
+.boton{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(249, 195, 48);
 }
 
-.actividades a:hover{
-    color: mediumpurple;
+#spin{
+    display: none;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin { 
+    0% { 
+        transform: rotate(0deg); 
+    }
+    
+    50% {
+        transform: rotate(360deg);
+    }
+    
+    50% {
+        transform: rotate(360deg);
+    }
+    
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+img{
+    width: 3rem;
+    height: 3rem;
 }
 
 /* PIE DE PÁGINA */

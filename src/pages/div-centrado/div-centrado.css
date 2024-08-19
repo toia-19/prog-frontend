@@ -39,24 +39,34 @@ h2, h3{
     text-align: start;
 }
 
-.actividades li{
-    font-size: medium;
-    padding-bottom: 1rem;
+.padre{
+    background-color: darkred;
 
-    list-style-type: decimal-leading-zero;
+    width: 30rem;
+    height: 30rem;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.actividades a{
-    color: black;
-}
+.hijo{
+    background-color: lemonchiffon;
 
-.actividades a:hover{
-    color: mediumpurple;
+    width: 15rem;
+    height: 15rem;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* PIE DE PÁGINA */
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0px;
 }
 

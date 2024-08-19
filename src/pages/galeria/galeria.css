@@ -31,27 +31,36 @@ nav{
     margin: 2rem;
 }
 
-h1{
+h1, h3{
     text-align: center;
 }
 
-h2, h3{
+h2{
     text-align: start;
 }
 
-.actividades li{
-    font-size: medium;
-    padding-bottom: 1rem;
-
-    list-style-type: decimal-leading-zero;
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.actividades a{
-    color: black;
+.imagen{
+    display: flex;
+    margin: 0.5rem;
+
+    transition: transform 0.2s;
 }
 
-.actividades a:hover{
-    color: mediumpurple;
+.imagen:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 12rem;
+    height: 16rem;
+
+    object-fit: cover;
 }
 
 /* PIE DE PÁGINA */
